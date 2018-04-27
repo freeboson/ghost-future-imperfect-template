@@ -10,12 +10,12 @@
 				<div class="meta">
 					<time class="published" datetime="{{date format='YYYY-MM-DD'}}">{{date format="MMMM DD, YYYY"}}</time>
 					
-					<a href="#" class="author"><span class="name">{{author.name}}</span><img src="{{author.image}}" alt="" /></a>
+					<a href="#" class="author"><span class="name">{{author.name}}</span><img src="{{author.profile_image}}" alt="" /></a>
 					{{!--{{tags prefix=" on "}}--}}
 				</div>
 			</header>
-			{{#if image}}
-			<a href="{{url}}" class="image featured"><img src="{{image}}" alt="" /></a>
+			{{#if feature_image}}
+			<a href="{{url}}" class="image featured"><img src="{{img_url}}" alt="" /></a>
 			{{/if}}
 			<div class="post-content">{{content}}</div>
 			<footer>
